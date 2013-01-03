@@ -19,9 +19,14 @@ export CXX=$HOST_CXX;
 #export KERNELSRC=$DIRSRC;
 
 # Target gcc version
-export TARGET_GCC=4.7;
-export ARM_EABI_TOOLCHAIN=/home/jarman/master/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7;
+export TARGET_GCC=4.8;
+export ARM_EABI_TOOLCHAIN=/home/jarman/master/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8;
 export PATH=$PATH:$ARM_EABI_TOOLCHAIN/bin:$ARM_EABI_TOOLCHAIN/arm-eabi/bin;
+
+# Build ID
+export LOCALVERSION="-CHARMANDER-LVL100"
+export KBUILD_BUILD_USER=JAR
+export KBUILD_BUILD_HOST="MINIMUS"
 
 # Cross compile with arm
 export ARCH=arm;
