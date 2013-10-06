@@ -39,7 +39,7 @@ time make -j4 zImage ;
 
 if [ -e ./arch/arm/boot/zImage ] ;
 then
-cp ./arch/arm/boot/zImage -f home/jarman/master/device/lge/mako-kernel/kernel;
+cp ./arch/arm/boot/zImage -f /home/jarman/master/device/lge/mako-kernel;
  echo "Kernel build finished, Continuing with ROM build";
  echo "";
 else
